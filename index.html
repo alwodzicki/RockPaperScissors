@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <span id="shoot" class="hidden">SHOOT!</span>
+    </header>
+
+    <div id="statTracker">
+      <div class="dataBox scoreboard">
+        <div id="user-label" class="badge">user</div>
+        <div id="comp-label" class="badge">comp</div>
+        <span id="user-score"> 0 </span>:<span id="comp-score"> 0 </span>
+      </div>
+
+      <div class="dataBox smallBox roundBox">
+        <div id="round-title" class="badge">Round</div>
+        <span id="roundNum">1</span>
+      </div>
+
+      <div class="dataBox smallBox compBox">
+        <div id="comp-title" class="badge">Computer</div>
+        <span id="compChoiceSpan">...</span>
+      </div>
+
+    </div><!-- end of tracker container -->
+
+    <div class="choices">
+      <span id="message">Choose your weapon</span>
+      <div class="choice" id="rock">
+        <span>Rock</span>
+      </div>
+      <div class="choice" id="paper">
+        <span>Paper</span>
+      </div>
+      <div class="choice" id="scissors">
+        <span>Scissors</span>
+      </div>
+    </div><!-- end of choices container-->
+
+    <script src="main.js"></script>
+  </body>
+</html>
